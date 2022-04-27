@@ -66,7 +66,7 @@ setInterval('aleatorio()',50);
 var lista = document.getElementsByClassName("text");
 function aleatorio(){
 	
-	window.lista[Math.round(getRandomArbitrary(0,1510))].innerHTML = NumeroAleatorio();
+	window.lista[Math.round(getRandomArbitrary(0,window.lista.length))].innerHTML = NumeroAleatorio();
 }
 function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
